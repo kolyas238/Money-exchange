@@ -1,0 +1,182 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #333;
+}
+
+.box {
+    border-radius: 4px;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 300px;
+    background-color: olive;
+    color: white;
+
+    h1 {
+        font-size: 30px;
+        margin: 0 0 1rem 0;
+        color: white;
+        font-family: "VT323", monospace;
+        text-transform: uppercase;
+    }
+
+    .frame {
+        border: 1px solid #fff;
+        border-radius: 4px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .typing-effect {
+        overflow: hidden;
+        white-space: nowrap;
+        -webkit-animation: typing 2.5s steps(20, end);
+        animation: typing 2.5s steps(20, end);
+    }
+
+    @-webkit-keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .amount {
+        border: 1px solid #fff;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-family: "VT323", monospace;
+        min-height: 50px;
+        line-height: 50px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin: 0 auto;
+        padding: 5px 0 5px 0;
+    }
+
+    .input {
+        border-radius: 4px;
+        font-family: "VT323", monospace;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid #fff;
+        margin-bottom: 15px;
+        margin-left: 7px;
+        padding: 0;
+        background: olive;
+        color: white;
+        min-height: 50px;
+        text-transform: uppercase;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .inputRadio {
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-appearance: none;
+    }
+
+    label {
+        font-family: "VT323", monospace;
+        width: 50px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked+label {
+        color: tomato;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .btn {
+        font-family: "VT323", monospace !important;
+        margin-bottom: 10px;
+        min-height: 30px;
+        color: white;
+        background: crimson;
+        font-weight: 400;
+        font-family: "Tahoma";
+        font-size: 25px;
+        border: 3px solid #aabb55;
+        border-radius: 4px;
+        -webkit-box-shadow: 5px 5px 3px 0 #444;
+        box-shadow: 5px 5px 3px 0 #444;
+        -webkit-transition: -webkit-box-shadow 0.5s;
+        transition: -webkit-box-shadow 0.5s;
+        transition: box-shadow 0.5s;
+        transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+    }
+
+    .btn:active {
+        -webkit-box-shadow: 5px 5px 3px 0 #667711;
+        box-shadow: 5px 5px 3px 0 #667711;
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .btn:hover {
+        background: tomato;
+    }
+}
